@@ -1,0 +1,7 @@
+cmake_minimum_required(VERSION 3.20)
+#project(P)
+#add_executable(P 621.cpp)
+add_subdirectory(./Catch2 Catch2-build)
+project(the_project_test)
+add_executable(the_project_test test621.cpp)
+target_link_libraries(the_project_test PRIVATE Catch2::Catch2)
